@@ -1,4 +1,4 @@
-// File: C:\Users\Ricardo de Sousa\Desktop\Phoenix Energy\blue-echo-gym-website\blue-echo-gym-website\app\page.tsx
+// File: C:\Users\Ricardo de Sousa\Desktop\Phoenix Energy\blue-echo-gym-website\website\app\page.tsx
 import * as entry from '../../../app/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
