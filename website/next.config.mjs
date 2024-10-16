@@ -3,6 +3,7 @@ const isProd = process.env.NODE_ENV === 'production';
 
 const nextConfig = {
     output: 'export',
+    reactStrictMode: true,
     
     // Set the basePath and assetPrefix for GitHub Pages (or similar platforms)
     basePath: isProd ? '/blue-echo-gym-website' : '',

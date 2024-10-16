@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  @apply bg-charcoalBlack;
+}
+
 .nav-item {
   display: inline-block;
   font-size: 1rem;
@@ -15,5 +19,22 @@
 
 .nav-item:hover {
   font-weight: 600;
+  @apply text-blue-500;
 
 }
+
+/* Grid container */
+.masonry-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr)); /* Responsive grid with dynamic column size */
+  grid-gap: 1rem; /* Space between items */
+  justify-content: center; /* Center-aligns content */
+}
+
+/* Flex container for last row */
+.masonry-grid::after {
+  content: "";
+  display: flex;
+  grid-column: 1 / -1; /* Span across all columns */
+}
+
