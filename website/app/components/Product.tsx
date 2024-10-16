@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 interface ProductCardProps {
     name: string;
@@ -8,10 +9,13 @@ interface ProductCardProps {
 
 // Functional component with typed props
 const ProductCard: React.FC<ProductCardProps> = ({ name, image, description }) => {
+
+    const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
+
   return (
     <div className="bg-white shadow-lg rounded-lg overflow-hidden">
       {/* Product Image */}
-      <img src={image} alt={name} className="w-full object-cover" />
+      <Image src={`${basePath}${image}`} alt={name} className="w-full object-cover" width={400} height={400} unoptimized={true}/>
 
       {/* Product Info */}
       <div className="p-6">

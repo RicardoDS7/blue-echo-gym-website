@@ -3,10 +3,10 @@ import Image from "next/image";
 
 const HeroSection: React.FC = () => {
   return (
-    <div className="relative w-full h-screen">
+    <div className="relative w-full h-[50vh]">
       {/* Background Image */}
       <Image
-        src="/path-to-your-image.jpg" // Replace with the path to your image
+        src="/images/GymHero.png" // Replace with the path to your image
         alt="Hero background"
         layout="fill" // This makes the image fill the parent div
         objectFit="cover" // Ensures the image covers the entire div without stretching

@@ -4,12 +4,11 @@ import { CardioEquipment } from "../constants"; // Import the CardioEquipment ar
 
 // Define the props interface (optional)
 interface ProductSectionProps {
-    label?: string;
     sectionId?: string;  // The section id to scroll to
   }
 
 // Functional component with typed props
-const CardioProductSection: React.FC<ProductSectionProps> = ({label,sectionId}) => {
+const CardioProductSection: React.FC<ProductSectionProps> = ({sectionId}) => {
     return (
         <section id={sectionId} className="flex flex-col gap-8 w-full justify-center items-center p-12">
           <h1 className="text-white text-5xl font-bold text-center uppercase"><span className="text-blue-500">Elite</span> Cardio Machines, <span className="text-blue-500">Unmatched</span> Quality</h1>

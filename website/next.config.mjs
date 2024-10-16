@@ -6,8 +6,8 @@ const nextConfig = {
     reactStrictMode: true,
     
     // Set the basePath and assetPrefix for GitHub Pages (or similar platforms)
-    basePath: isProd ? '/blue-echo-gym-website' : '',
-    assetPrefix: isProd ? '/blue-echo-gym-website/' : '',
+    basePath: process.env.NEXT_PUBLIC_BASE_PATH || '',
+    assetPrefix: process.env.NEXT_PUBLIC_BASE_PATH || '',
 
     images: {
         unoptimized: true, // Disable image optimization for static export

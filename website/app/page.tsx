@@ -7,15 +7,16 @@ import GetQuoteForm from "./components/GetQuote";
 
 export default function Home() {
 
-  const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
-
   return (
     <div>
       <NavBar />
       <HeroSection />
       <CardioProductSection 
-        label="Elite Cardio Machines, Unmatched Quality"
         sectionId="cardio"/>
+      <CardioProductSection 
+        sectionId="strength"/>
+      <CardioProductSection 
+        sectionId="mobility"/>
       <GetQuoteForm />
       <Footer />
     </div>

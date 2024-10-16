@@ -11,7 +11,6 @@ body {
   font-size: 1rem;
   line-height: 1.5rem;
   font-weight: 500;
-  min-width: max-content;
   transition: font-weight 0.2s ease-in-out;
   
   
