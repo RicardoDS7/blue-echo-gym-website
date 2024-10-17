@@ -9,7 +9,7 @@ const NavBar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="flex items-center justify-evenly w-full p-6 bg-charcoalBlack z-30">
+    <nav className="sticky top-0 md:static flex items-center justify-evenly w-full p-6 bg-charcoalBlack z-30">
       {/* Logo */}
       <h1 className="text-white text-2xl font-bold">BLUE ECHO <span className="text-blue-500">FITNESS</span></h1>
 

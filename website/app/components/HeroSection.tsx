@@ -15,8 +15,8 @@ const HeroSection: React.FC = () => {
         <div className="absolute inset-0 bg-black opacity-70 z-0"></div>
 
         {/* Hero Content */}
-        <div className="relative w-full flex flex-col justify-center text-center z-10 px-2 mt-8">
-            <h1 className="text-white text-4xl md:text-6xl lg:text-8xl font-bold text-center uppercase">UPGRADE YOUR GYM. <br />
+        <div className="relative w-full flex flex-col justify-center text-center z-10 px-12 lg:px-48 py-8 mt-8">
+            <h1 className="text-white text-3xl md:text-6xl lg:text-8xl font-bold text-center uppercase">UPGRADE YOUR GYM. <br />
             <span className="text-blue-500">UPGRADE YOUR BODY.</span></h1>
             <p className="text-xl lg:text-2xl text-white mt-4 lg:mt-16">
             Unlock Your Potential with Cutting-Edge Gym Equipment – Where Innovation Meets Performance.
