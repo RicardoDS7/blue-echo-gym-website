@@ -4,6 +4,8 @@ import HeroSection from './components/HeroSection';
 import Footer from './components/Footer';
 import CardioProductSection from "./components/CardioProductSection";
 import GetQuoteForm from "./components/GetQuote";
+import MobilityProductSection from "./components/MobilityProductionSection";
+import StrengthProductSection from "./components/StrengthProductSection";
 
 export default function Home() {
 
@@ -13,9 +15,9 @@ export default function Home() {
       <HeroSection />
       <CardioProductSection 
         sectionId="cardio"/>
-      <CardioProductSection 
+      <StrengthProductSection 
         sectionId="strength"/>
-      <CardioProductSection 
+      <MobilityProductSection 
         sectionId="mobility"/>
       <GetQuoteForm />
       <Footer />

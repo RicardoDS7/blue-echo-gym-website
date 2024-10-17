@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body {
-  @apply bg-charcoalBlack;
+  @apply bg-ivoryWhite;
 }
 
 .nav-item {
@@ -25,9 +25,27 @@ body {
 /* Grid container */
 .masonry-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr)); /* Responsive grid with dynamic column size */
-  grid-gap: 1rem; /* Space between items */
-  justify-content: center; /* Center-aligns content */
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 1rem;
+  justify-content: center;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  box-sizing: border-box;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+
+@media (min-width: 768px) {
+  .masonry-grid {
+    max-width: 700px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .masonry-grid {
+    max-width: 1200px;
+  }
 }
 
 /* Flex container for last row */
@@ -37,3 +55,49 @@ body {
   grid-column: 1 / -1; /* Span across all columns */
 }
 
+
+.brands-polygon-clip {
+  clip-path: polygon(
+    0% 0%,    /* Top center */
+    100% 0%,  /* Top right */
+    100% 75%,  /* Bottom right */
+    30% 100%,  /* Bottom center */
+    0% 75%,    /* Bottom left */
+    0% 75%     /* Top left */
+  );
+}
+
+.triangle-clip {
+  clip-path: polygon(
+    0% 0%,    /* Top center */
+    100% 0%,  /* Top right */
+    100% 100%
+  );
+}
+
+.reverse-triangle-clip {
+  clip-path: polygon(
+    0% 0%,    /* Top center */
+    100% 100%,  /* Top right */
+    0% 100%
+  );
+}
+.mySwiper .swiper-pagination {
+  margin-bottom: 0px !important; /* Adjust the distance from the bottom */
+}
+
+
+/* Customize the Swiper Next and Previous buttons */
+.mySwiper .swiper-button-next,
+.mySwiper .swiper-button-prev {
+  width: 30px !important;  /* Adjust the width */
+  height: 30px !important; /* Adjust the height */
+  font-weight: 700;
+}
+
+/* Customize the arrow icon size */
+.mySwiper .swiper-button-next::after,
+.mySwiper .swiper-button-prev::after {
+  font-size: 24px !important; /* Change the size of the arrow */
+  @apply text-blue-500; /* Change the arrow color */
+}

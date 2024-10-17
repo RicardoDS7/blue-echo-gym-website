@@ -28,9 +28,12 @@ const GetQuoteForm: React.FC = () => {
   };
 
   return (
-    <section id="quote-section" className="p-20">
-        <div className="max-w-lg mx-auto p-6 bg-gray-100 rounded-lg shadow-md">
-        <h2 className="text-2xl font-bold text-center mb-6">Get a Quote</h2>
+    <section id="quote-section" className="p-10 bg-charcoalBlack">
+
+        <h2 className="text-white text-3xl lg:text-5xl font-bold text-center uppercase">CONTACT US NOW FOR A<span className="text-blue-500"> FREE </span>QUOTE</h2>
+
+        <div className="max-w-lg mx-auto p-6 bg-gray-100 rounded-lg shadow-md mt-12">
+        
         <form onSubmit={handleSubmit} className="space-y-4">
             {/* Name Field */}
             <div>

@@ -10,20 +10,24 @@ interface ProductSectionProps {
 // Functional component with typed props
 const CardioProductSection: React.FC<ProductSectionProps> = ({sectionId}) => {
     return (
-        <section id={sectionId} className="flex flex-col gap-8 w-full justify-center items-center p-12">
-          <h1 className="text-white text-5xl font-bold text-center uppercase"><span className="text-blue-500">Elite</span> Cardio Machines, <span className="text-blue-500">Unmatched</span> Quality</h1>
-          <p className="text-xl lg:px-48 text-center text-ivoryWhite">Equip your gym with the best from top industry brands! Our selection, backed by leading ergonomic and biomechanical innovation, ensures your gym stays ahead with equipment that delivers reliability, safety, and cutting-edge digital features. </p>
-            <div className="masonry-grid">
+        <div>
+        <section id={sectionId} className="relative flex flex-col gap-8 w-full justify-center items-center p-12 bg-charcoalBlack">
+          <h2 className="text-white text-3xl lg:text-5xl font-bold text-center uppercase"><span className="text-blue-500">Elite</span> Cardio Machines, <span className="text-blue-500">Unmatched</span> Quality</h2>
+          <p className="mt-2 text-xl lg:px-48 text-center text-ivoryWhite">Equip your gym with the best from top industry brands! Our selection, backed by leading ergonomic and biomechanical innovation, ensures your gym stays ahead with equipment that delivers reliability, safety, and cutting-edge digital features. </p>
+            <div className="masonry-grid mt-8">
               {CardioEquipment.map((equipment,index) => (
                 <ProductCard
                     key={index}
                     name={equipment.name}
                     image={equipment.image}
                     description={equipment.description}
+                    category="cardio"
                 />
               ))}
             </div>
         </section>
+        <div className="triangle-clip bg-charcoalBlack w-full h-16 -mt-0.5"/>
+        </div>
       );
     };
 
